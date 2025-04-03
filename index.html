@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediacom.css" />
   </head>
 
   <body>
@@ -50,6 +51,13 @@
             </li>
           </ul>
         </address>
+        <div class="burger-box">
+          <button class="btn-burger">
+            <svg class="burger" width="24" height="24">
+              <use href="./images/icons2.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!-- main -->
@@ -331,7 +339,7 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
-                  src="./images/portfolio2.jpg"
+                  src="./images/portfolio4.jpg"
                   alt="auto drive"
                   width="360"
                 />
@@ -367,7 +375,7 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
-                  src="./images/portfolio4.jpg"
+                  src="./images/portfolio2.jpg"
                   alt="qr code scaning"
                   width="360"
                 />
@@ -424,67 +432,69 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-logo-box">
-          <a class="logo-footer" href="./index.html"
-            >WEB<span class="footer-logostudio">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-soc-box">
-          <p class="footer-soc-title">Social media</p>
-          <ul class="footer-soc-icon">
-            <li class="footer-icon">
-              <a class="footer-soc-icon-link" href="">
-                <svg width="24" height="24" class="soc-icon">
-                  <use href="./images/icons2.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="footer-icon">
-              <a class="footer-soc-icon-link" href="">
-                <svg width="24" height="24" class="soc-icon">
-                  <use href="./images/icons2.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-icon">
-              <a class="footer-soc-icon-link" href="">
-                <svg width="24" height="24" class="soc-icon">
-                  <use href="./images/icons2.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="footer-icon">
-              <a class="footer-soc-icon-link" href="">
-                <svg width="24" height="24" class="soc-icon">
-                  <use href="./images/icons2.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe-cotainer">
-          <p class="subscribe-title">Subscribe</p>
-          <form action="subscribe" class="subscribe-form">
-            <label class="footer-input">
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="email-input"
-            /></label>
-            <button type="submit" class="subscribe-btn">
-              Subscribe
-              <svg width="24" height="24" class="subscribe-icon">
-                <use href="./images/icons2.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-logo-box">
+            <a class="logo-footer" href="./index.html"
+              >WEB<span class="footer-logostudio">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-soc-box">
+            <p class="footer-soc-title">Social media</p>
+            <ul class="footer-soc-icon">
+              <li class="footer-icon">
+                <a class="footer-soc-icon-link" href="">
+                  <svg width="24" height="24" class="soc-icon">
+                    <use href="./images/icons2.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="footer-icon">
+                <a class="footer-soc-icon-link" href="">
+                  <svg width="24" height="24" class="soc-icon">
+                    <use href="./images/icons2.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-icon">
+                <a class="footer-soc-icon-link" href="">
+                  <svg width="24" height="24" class="soc-icon">
+                    <use href="./images/icons2.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-icon">
+                <a class="footer-soc-icon-link" href="">
+                  <svg width="24" height="24" class="soc-icon">
+                    <use href="./images/icons2.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-cotainer">
+            <p class="subscribe-title">Subscribe</p>
+            <form action="subscribe" class="subscribe-form">
+              <label class="footer-input">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="email-input"
+              /></label>
+              <button type="submit" class="subscribe-btn">
+                Subscribe
+                <svg width="24" height="24" class="subscribe-icon">
+                  <use href="./images/icons2.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="btn-close">
           <svg width="8" height="8" class="close">
@@ -572,6 +582,34 @@
           <button type="submit" class="btn-send">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="mobile-nav">
+      <button type="button" class="btn-close nav-btn">
+        <svg width="8" height="8" class="close">
+          <use href="./images/icons2.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li>
+          <a href="./index.html" class="nav-list-item current">Studio</a>
+        </li>
+        <li><a href="" class="nav-list-item">Portfolio</a></li>
+        <li><a href="" class="nav-list-item">Contacts</a></li>
+      </ul>
+
+      <address class="contacts">
+        <ul class="contacts-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
     </div>
   </body>
 </html>
