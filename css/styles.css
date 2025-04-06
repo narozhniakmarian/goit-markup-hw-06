@@ -42,9 +42,11 @@ p {
 }
 
 .container {
+  max-width: 100%;
   max-width: 1158px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header {
@@ -143,12 +145,11 @@ p {
 
 .contacts {
   font-style: normal;
-  margin-left: auto;
 }
 
 .contacts-list {
   display: flex;
-  gap: 40px;
+
 }
 
 .contact {
@@ -187,7 +188,8 @@ p {
 
 .hero {
   max-width: 1440px;
-  padding: 188px 0 188px 0;
+  width: 100%;
+
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
@@ -246,7 +248,7 @@ p {
 /* section2 */
 
 .feature {
-  padding: 120px 0 120px;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -275,23 +277,24 @@ p {
 }
 
 .feature-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .feature-item-text {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
 .feature-icon-cpntainer {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -312,7 +315,7 @@ p {
 
 /* section3 */
 .team {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: #f4f4fd;
 }
 
@@ -403,7 +406,7 @@ p {
 
 /* section4 */
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -416,14 +419,7 @@ p {
   margin-bottom: 72px;
 }
 
-.portolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  padding: 0;
 
-}
 
 .portfolio-item-title {
   font-weight: 500;
@@ -485,7 +481,7 @@ p {
 /* footer */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 
@@ -507,15 +503,6 @@ p {
 
 .footer-logostudio {
   color: #f4f4fd;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-logo-box {
-  margin-right: 120px;
 }
 
 .footer-text {
@@ -1007,7 +994,7 @@ p {
 
 .mobile-soc-icon-link:hover,
 .mobile-soc-icon-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 /*===================== mobile nav================ */
