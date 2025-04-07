@@ -51,7 +51,7 @@
           </ul>
         </address>
         <div class="burger-box">
-          <button class="btn-burger" id="openMenuBtn" type="button">
+          <button class="btn-burger" type="button" data-menu-open>
             <svg class="burger" width="24" height="24">
               <use href="./images/icons2.svg#icon-burger"></use>
             </svg>
@@ -65,7 +65,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" id="openModalBtn" type="button">
+          <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -135,10 +135,11 @@
           <ul class="team-list">
             <li class="team-card">
               <img
-                class="team-img"
+                srcset="./images/img1.jpg 1x, ./images/img@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Product Designer Mark Guerrero"
                 width="264"
+                class="team-img"
               />
               <div class="card-name">
                 <h3 class="team-card-title">Mark Guerrero</h3>
@@ -179,10 +180,11 @@
             </li>
             <li class="team-card">
               <img
-                class="team-img"
-                src="./images/img2.jpg"
+                srcset="./images/img4.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img4.jpg"
                 alt="Frontend Developer Tom Ford"
                 width="264"
+                class="team-img"
               />
               <div class="card-name">
                 <h3 class="team-card-title">Tom Ford</h3>
@@ -223,10 +225,11 @@
             </li>
             <li class="team-card">
               <img
-                class="team-img"
+                srcset="./images/img3.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Marketing Camila Garcia"
                 width="264"
+                class="team-img"
               />
               <div class="card-name">
                 <h3 class="team-card-title">Camila Garcia</h3>
@@ -267,10 +270,11 @@
             </li>
             <li class="team-card">
               <img
-                class="team-img"
-                src="./images/img4.jpg"
+                srcset="./images/img2.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img2.jpg"
                 alt="UI Designer Daniel Wilson"
                 width="264"
+                class="team-img"
               />
               <div class="card-name">
                 <h3 class="team-card-title">Daniel Wilson</h3>
@@ -322,6 +326,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio5.jpg    1x,
+                    ./images/portfolio5@2x.jpg 2x
+                  "
                   src="./images/portfolio5.jpg"
                   alt="phone desck"
                   width="360"
@@ -340,6 +348,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio4.jpg    1x,
+                    ./images/portfolio4@2x.jpg 2x
+                  "
                   src="./images/portfolio4.jpg"
                   alt="auto drive"
                   width="360"
@@ -358,6 +370,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio3.jpg    1x,
+                    ./images/portfolio3@2x.jpg 2x
+                  "
                   src="./images/portfolio3.jpg"
                   alt="laptop and phone"
                   width="360"
@@ -376,6 +392,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio2.jpg    1x,
+                    ./images/portfolio2@2x.jpg 2x
+                  "
                   src="./images/portfolio2.jpg"
                   alt="qr code scaning"
                   width="360"
@@ -394,6 +414,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio1.jpg    1x,
+                    ./images/portfolio1@2x.jpg 2x
+                  "
                   src="./images/portfolio1.jpg"
                   alt="happi women"
                   width="360"
@@ -412,6 +436,10 @@
             <li class="portfolio-item">
               <div class="over-card">
                 <img
+                  srcset="
+                    ./images/portfolio6.jpg    1x,
+                    ./images/portfolio6@2x.jpg 2x
+                  "
                   src="./images/portfolio6.jpg"
                   alt="all desck"
                   width="360"
@@ -497,9 +525,9 @@
       </div>
     </footer>
 
-    <div class="backdrop" id="myModal">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="btn-close">
+        <button type="button" class="btn-close" data-modal-close>
           <svg width="8" height="8" class="close">
             <use href="./images/icons2.svg#icon-close"></use>
           </svg>
@@ -587,9 +615,9 @@
       </div>
     </div>
 
-    <div class="mobile-nav" id="mobileMenu">
+    <div class="mobile-nav" data-menu>
       <div class="mobile-container">
-        <button type="button" class="btn-close nav-btn" id="closeMenuBtn">
+        <button type="button" class="nav-btn" data-menu-close>
           <svg width="8" height="8" class="close">
             <use href="./images/icons2.svg#icon-close"></use>
           </svg>
