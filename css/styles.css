@@ -223,7 +223,8 @@ p {
   gap: 72px;
   padding: 0;
 }
-
+.feature-icon-cpntainer {
+    display: none;}
 
 
 .feature-item-title {
