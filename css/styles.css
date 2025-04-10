@@ -23,6 +23,7 @@ li {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -133,7 +134,7 @@ p {
 /* section1 */
 
 .hero {
-  max-width: 767px;
+  max-width: 320px;
   width: 100%;
   padding: 72px 0;
   background-image:
@@ -393,9 +394,7 @@ p {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.over-text {
-  display: none;
-}
+
 
 /* footer */
 .footer {
@@ -734,7 +733,8 @@ p {
 }
 
 .check-label {
-  display: block;
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -744,6 +744,7 @@ p {
 }
 
 .check-border {
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1057,7 +1058,7 @@ p {
   }
 
   .hero {
-    max-width: 1157px;
+    max-width: 786px;
     width: 100%;
     padding: 112px 0;
     background-image:
@@ -1102,7 +1103,7 @@ p {
   .team-list {
     display: flex;
     flex-direction: row;
-    width: 548px;
+    width: 552px;
     padding: 0;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -1129,6 +1130,9 @@ p {
   .footer-container {
     width: 496px;
     margin-left: 108px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
   }
 
   .logo-footer {
@@ -1146,11 +1150,12 @@ p {
   .footer-info-wrapper {
     display: flex;
     gap: 24px;
-    margin-bottom: 72px;
+    margin: 0;
   }
 
   .footer-logo-box {
     width: 264px;
+    margin: 0;
   }
 
   .footer-soc-box {
@@ -1176,6 +1181,10 @@ p {
 
   .mobile-nav {
     display: none;
+  }
+
+  .check-label {
+    display: block;
   }
 }
 
@@ -1345,5 +1354,14 @@ p {
 
   .footer-logo-box {
     margin: 0;
+  }
+}
+
+
+
+@media (max-width: 1157px) {
+  .over-text {
+    transform: translateY(100%);
+    display: block;
   }
 }
